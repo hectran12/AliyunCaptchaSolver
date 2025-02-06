@@ -74,7 +74,7 @@ class AliyunCSSolver:
     def process_detections(self, image_path, detections):
         img = cv2.imread(image_path)
         if img is None:
-            raise ValueError("Không thể đọc ảnh, kiểm tra lại đường dẫn!")
+            raise ValueError("Cannot read image, please check the path!")
         for obj in detections:
             x1, y1, x2, y2 = map(int, obj["bbox"])
             cropped_img = img[y1:y2, x1:x2]
