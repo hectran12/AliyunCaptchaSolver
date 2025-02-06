@@ -11,7 +11,17 @@ pip install -r requirements.txt
 ## Usage
 函数 solve 有两种返回方式：
 1. 显示图片。
-2. 返回坐标 (x, y)。
+
+![demo](https://github.com/hectran12/AliyunCaptchaSolver/blob/main/github/img/image.jpg)
+
+
+3. 返回坐标 (x, y)。
+
+   
+![demo](https://github.com/hectran12/AliyunCaptchaSolver/blob/main/github/img/xy.png)
+
+
+
 ```py
 import aliyun
 
