@@ -52,7 +52,7 @@ def download_image(url, path):
 with sync_playwright() as p:
     browser = p.firefox.launch(headless=False)
     page = browser.new_page()
-    obj = aliyun.AliyunCSSolver()
+
     page.goto("https://cloud.vmoscloud.com/buy")
 
     page.wait_for_selector('input[placeholder="Please enter your email address"]')
